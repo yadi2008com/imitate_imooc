@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 搜索课程中显示搜索历史记录的list项 -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:textColor="#000"
+    android:textSize="18sp" />

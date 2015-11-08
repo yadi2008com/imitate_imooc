@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <ImageView
+        android:id="@+id/tv_logo"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mooc_logo" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_logo"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15sp"
+        android:textSize="20sp"
+        android:text="Version 3.6.0"
+        android:textColor="#d71345" />
+
+    <ImageView
+        android:id="@+id/iv_two_dimension_code"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_below="@id/tv_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/about_two_dimension_code" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_two_dimension_code"
+        android:background="#fff" >
+        <TextView
+        android:id="@+id/tv_qq_crowd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="120sp"
+        android:textSize="20sp"
+        android:text="QQ群：300569351"
+        android:textColor="#666666" />
+        <TextView
+        android:id="@+id/tv_copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_qq_crowd"
+        android:paddingTop="5sp"
+        android:textSize="15sp"
+        android:text="Copyright © 2015 imooc.com All right reserved"
+        android:textColor="#666666" />
+    </RelativeLayout>
+
+</RelativeLayout>

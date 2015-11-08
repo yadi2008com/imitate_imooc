@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            android:paddingTop="10sp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_check_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="提交反馈"
+                android:textColor="#cc0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_my_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_check_opinion"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的反馈"
+                android:textColor="#555555"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_other_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_my_opinion"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="其他反馈"
+                android:textColor="#555555"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/V_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:background="#999999"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/v_a"
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_weight="1"
+                android:background="#cc0000" />
+
+            <View
+                android:id="@+id/v_b"
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_weight="1"
+                android:background="#999999" />
+
+            <View
+                android:id="@+id/v_c"
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_weight="1"
+                android:background="#999999" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_checkd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/V_a"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/et_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_marginTop="20sp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:minLines="7"
+                android:padding="20sp"
+                android:text="骚年，哪有不爽，来喷吧！"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_opinion"
+                android:layout_margin="30sp"
+                android:layout_marginTop="20sp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:padding="20sp"
+                android:text="请留下QQ、邮箱或手机号、方便答疑解惑"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_checked_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_address"
+                android:layout_margin="30sp"
+                android:layout_marginTop="20sp"
+                android:background="#ff7777"
+                android:gravity="center"
+                android:padding="20sp"
+                android:text="提交"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/V_a"
+            android:visibility="invisible" >
+
+            <ListView
+                android:id="@+id/lv_my_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/V_a"
+            android:visibility="invisible" >
+
+            <ListView
+                android:id="@+id/lv_other_opinion"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

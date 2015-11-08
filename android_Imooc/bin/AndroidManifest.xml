@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.b"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/imooc"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.etc.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/titlestyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.etc.activity.MyCourseActivity"
+            android:label="@string/my_course" />
+        <activity
+            android:name="com.etc.activity.MyNoteActivity"
+            android:label="@string/title_activity_my_note"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.setting.MyGradeActivity"
+            android:label="@string/title_activity_my_note_original" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.setting.MyOpinionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.MyNoteOriginal"
+            android:label="@string/title_activity_my_note_original" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.MyNoteCollect"
+            android:label="@string/title_activity_my_note_collect" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.setting.MySettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.setting.MyAboutImoocActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.download.DownloadActivity"
+            android:label="@string/DownloadActivity_name" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.PersonalSetActivity"
+            android:label="@string/title_activity_personal_set"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.OccupationSetActivity"
+            android:label="@string/title_activity_occupation_set"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.NicknameSetActivity"
+            android:label="@string/title_activity_nickname_set"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.AutographSetActivity"
+            android:label="@string/title_activity_autograph_set"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.MyPlanActivity"
+            android:label="@string/my_plan" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.RegionSetActivity"
+            android:label="@string/title_activity_region_set" 
+            android:theme="@android:style/Theme.NoTitleBar" >                      
+        </activity>
+        <activity
+            android:name="com.etc.activity.SexSetActivity"
+            android:label="@string/title_activity_sex_set" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.MyNoteContent"
+            android:label="@string/title_activity_my_note_content"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.RegionSet21Activity"
+            android:label="@string/title_activity_region_set21" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.RegionSet22Activity"
+            android:label="@string/title_activity_region_set22" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.etc.activity.CourseLeiActivity"
+            android:label="@string/my_course" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.etc.activity.VideoPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/titlestyle" >
+        </activity>
+    </application>
+
+</manifest>

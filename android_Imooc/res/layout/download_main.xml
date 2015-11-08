@@ -1,0 +1,21 @@
+<ScrollView 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    >
+ <LinearLayout 
+      android:orientation="vertical"
+     android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/llRoot">
+
+     <ListView
+         android:id="@android:id/list"
+         android:layout_width="fill_parent"
+         android:layout_height="460dp" >
+
+     </ListView>
+ </LinearLayout>
+ </ScrollView>

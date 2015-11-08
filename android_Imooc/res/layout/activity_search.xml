@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BE2436" >
+
+        <ImageButton
+            android:id="@+id/search_back_image"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="2dp"
+            android:background="#BE2436"
+            android:src="@drawable/full_back_normal" />
+
+        <EditText
+            android:id="@+id/search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/search_search_button"
+            android:layout_toRightOf="@+id/search_back_image"
+            android:background="@drawable/textfield_multiline_default_holo_dark"
+            android:textColor="#fff" />
+
+        <ImageButton
+            android:id="@+id/search_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#B22222"
+            android:src="@drawable/search_pressed" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="历史记录"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:divider="#ddd"
+        android:dividerHeight="1px" />
+
+    <ImageView
+        android:id="@+id/no_course_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/no_course_icon" />
+
+    <TextView
+        android:id="@+id/no_course_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="暂无您要找的课程" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ddd" />
+
+    <TextView
+        android:id="@+id/search_delete_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="清空搜索历史"
+        android:textColor="#00B2EE"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:onClick="userinfo"
+        android:id="@+id/my_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter" 
+            android:contentDescription="圆头像"
+            android:src="@drawable/t" />
+
+        <TextView
+            
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_user_image"
+            android:text="暴力刀刀"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:src="@drawable/small_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="clearCache"
+        android:id="@+id/my_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_userinfo"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_clear_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="清除缓存"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_cache_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:text="当前可用0KB"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/V_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_clear_cache"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/v_1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_marginLeft="20dp"
+            android:background="#dddddd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_wifi_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/V_1"
+        android:background="#fff"
+        android:paddingBottom="7dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="7dp" >
+
+        <TextView
+            android:id="@+id/tv_wifi_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="允许非wifi网络播放"
+            android:textColor="#000"
+            android:textSize="20sp" />
+		<ImageView 
+		    android:onClick="wifiSetting"
+		    android:id="@+id/iv_wifi_setting"
+		    android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:layout_centerVertical="true"
+		    />
+        <TextView
+            android:id="@+id/tv_wifi_permission_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wifi_permission"
+            android:layout_marginLeft="15dp"
+            android:text="请慎重选择开启    避免过度使用流量"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/V_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_wifi_permission"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/v_2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_marginLeft="20dp"
+            android:background="#dddddd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/my_auto_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/V_2"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_auto_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="自动播放视频"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <ImageView 
+            android:onClick="autoPlay"
+		    android:id="@+id/iv_auto_play_setting"
+		    android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+		    />
+    </RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/V_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_auto_play"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/v_3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_marginLeft="20dp"
+            android:background="#dddddd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/my_notify_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/V_3"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_notify_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="推送设置"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:src="@drawable/small_next" />
+    </RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/V_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_notify_setting"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/v_4"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_marginLeft="20dp"
+            android:background="#dddddd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:onClick="grade"
+        android:id="@+id/my_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/V_4"
+        android:layout_marginBottom="20sp"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="给我评分"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:src="@drawable/small_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_grade"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:onClick="opinion"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_opinion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="意见反馈"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:src="@drawable/small_next" />
+    </RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/V_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_opinion"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_marginLeft="20dp"
+            android:background="#dddddd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:onClick="aboutImooc"
+        android:id="@+id/my_about_imooc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/V_5"
+        android:background="#fff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_about_imooc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="关于慕课网"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:src="@drawable/small_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_log_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_about_imooc"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp" >
+
+        <Button
+            android:onClick="logOff"
+            android:id="@+id/bt_log_off"
+            android:layout_width="350sp"
+            android:layout_height="80sp"
+            android:layout_margin="20sp"
+            android:background="#ffffff"
+            android:gravity="center_horizontal|center_vertical"
+            
+            android:padding="20sp"
+            android:text="退出登录 "
+            android:textColor="#cc0033"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

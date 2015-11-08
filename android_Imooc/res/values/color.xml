@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="background">#cdcd</color>
+    <color name="black">#000</color>
+    <color name="grey">#848484</color>
+
+    <color name="white">#fff</color>
+
+	<color name="leftMenu_Item_selected_grey">#e3e3e3</color>
+	<color name="leftMenu_Item_selected_white">#fff</color>
+	<color name="leftMenu_ItemText_selected_Red">#F00</color>
+	<color name="leftMenu_ItemText_selected_Nromal">#000</color>
+	
+
+</resources>

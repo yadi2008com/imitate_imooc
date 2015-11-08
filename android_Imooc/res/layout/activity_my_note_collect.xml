@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pagnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/grey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条笔记"
+            android:textColor="@color/grey"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/linout_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="aaa"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_course"
+            android:layout_width="150dip"
+            android:layout_height="45dip"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="-25sp"
+            android:layout_marginTop="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_coursetitle"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-25sp"
+            android:layout_marginTop="20sp"
+            android:text="电商大数据应用之Hive实现用户画像"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:id="@+id/tv_notenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="27sp"
+                android:text="1"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" >
+    </View>
+
+</LinearLayout>

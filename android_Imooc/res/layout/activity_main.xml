@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- The main content view -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.etc.activity.MyGallery
+                android:id="@+id/mygallery"
+                android:layout_width="fill_parent"
+                android:layout_height="200sp" />
+
+            <com.etc.activity.RefreshableView
+                android:id="@+id/refreshable_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/classlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#EBEBEB"
+                    android:dividerHeight="1px" >
+                </ListView>
+            </com.etc.activity.RefreshableView>
+        </LinearLayout>
+        <!-- 左侧菜单栏 -->
+
+        <include layout="@layout/leftmenu" />
+
+        <!-- 右侧菜单栏 -->
+
+        <include layout="@layout/rightmenu" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">imooc</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my_note">我的笔记</string>
+    <string name="title_activity_my_note_original">MyNoteOriginal</string>
+    <string name="title_activity_my_note_collect">MyNoteCollect</string>
+    <string name="my_course">我的课程</string>
+    <string name="my_plan">我的计划</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_my_note_content">MyNoteContent</string>
+    <string name="title_activity_personal_set">个人设置</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="DownloadActivity_name">离线缓存</string>
+    <string name="title_activity_occupation_set">选择职业</string>
+    <string name="title_activity_nickname_set">昵称</string>
+    <string name="title_activity_autograph_set">签名</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_my_plan">MyPlanActivity</string>
+    <string name="title_activity_region_set">地区</string>
+    <string name="title_activity_sex_set">性别</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_activity_region2_set">Region2SetActivity</string>
+    <string name="title_activity_region_set21">RegionSet21Activity</string>
+    <string name="title_activity_region_set22">RegionSet22Activity</string>
+    <string name="title_activity_region_set23">RegionSet23Activity</string>
+    <string name="title_activity_region_set24">RegionSet24Activity</string>
+
+</resources>

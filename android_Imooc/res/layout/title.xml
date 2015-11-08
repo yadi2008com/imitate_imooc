@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BE2436" >
+
+    <ImageButton
+        android:id="@+id/leftMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BE2436"
+        android:paddingLeft="-25sp"
+        android:src="@drawable/left" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:paddingTop="6sp"
+        android:text="全部课程"
+        android:textColor="#FFF"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/rightMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#B22222"
+        android:src="@drawable/classify_icon_pressed" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rightMenu"
+        android:background="#B22222"
+        android:src="@drawable/search_pressed" />
+    
+
+</RelativeLayout>

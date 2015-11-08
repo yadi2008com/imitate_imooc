@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleBackgroundColor">
+         <item name="android:background">#BE2436</item>
+     </style>
+    
+     <style name="titlestyle" parent="android:Theme" >
+         <item name="android:windowTitleSize">40dip</item>   
+         <item name="android:windowTitleBackgroundStyle">@style/TitleBackgroundColor</item>
+     </style>
+</resources>

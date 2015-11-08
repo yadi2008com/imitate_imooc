@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20sp"
+    android:paddingRight="20sp"
+     >
+
+    <TextView
+        android:id="@+id/tv_opin_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        android:paddingTop="20sp"
+         />
+
+    <TextView
+        android:id="@+id/tv_opin_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_opin_date"
+        android:layout_marginTop="20sp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_reply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_opin_content"
+        android:layout_marginTop="20sp"
+        android:text="慕课网产品经理："
+        android:textColor="#cc6600"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_opin_replycontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_opin_content"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@id/tv_reply_name"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/V_O"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_opin_replycontent"
+        android:background="#fff"
+        android:paddingTop="20sp" >
+
+        <View
+            android:id="@+id/v_o"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#dddddd"
+            
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

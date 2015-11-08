@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_drawer"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp" >
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/user_default_photo" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:text="立即登录"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:text=""
+            android:textColor="#848484"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/all_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/all_course_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_allcourse_icon_normal" />
+
+        <TextView
+            android:id="@+id/all_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/all_course_img"
+            android:text="全部课程"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/my_course_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_mycourse_icon_normal" />
+
+        <TextView
+            android:id="@+id/my_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/my_course_img"
+            android:text="我的课程"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/download_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_download_icon_normal" />
+
+        <TextView
+            android:id="@+id/download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/download_img"
+            android:text="离线缓存"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/message_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_message_icon_normal" />
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/message_img"
+            android:text="我的消息"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/my_plan_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_mycourse_icon_normal" />
+
+        <TextView
+            android:id="@+id/my_plan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/my_course_img"
+            android:text="我的计划"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mynote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/mynote_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_mynote_icon_normal" />
+
+        <TextView
+            android:id="@+id/mynote_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/mynote_img"
+            android:text="我的笔记"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/article_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_article_icon_normal" />
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/article_img"
+            android:text="文章"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp" >
+
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sliding_setting_icon_normal" />
+
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/setting_img"
+            android:text="设置"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

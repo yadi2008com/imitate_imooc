@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BE2436" >
+
+    <ImageButton
+        android:id="@+id/Im_back_title"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="2dp"
+        android:background="#BE2436"
+        android:src="@drawable/full_back_normal" />
+
+
+
+</RelativeLayout>
